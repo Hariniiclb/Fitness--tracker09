@@ -1,0 +1,40 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+    let steps = 0;
+
+    let calories = 0;
+
+    const stepsElement = document.getElementById("steps");
+
+    const caloriesElement = document.getElementById("calories");
+
+    const addStepButton = document.getElementById("addStep");
+
+    const burnCaloriesButton = document.getElementById("burnCalories");
+
+    addStepButton.addEventListener("click", function () {
+
+        steps++;
+
+        stepsElement.textContent = steps;
+
+    });
+
+    burnCaloriesButton.addEventListener("click", function () {
+
+        if (steps > 0) {
+
+            steps--;
+
+            stepsElement.textContent = steps;
+
+            calories += 5; // You can adjust the calorie calculation as needed.
+
+            caloriesElement.textContent = calories;
+
+        }
+
+    });
+
+});
+
