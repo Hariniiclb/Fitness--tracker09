@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+    <div class="container">
+        <div class="tracker">
+            <h2>Today's Stats</h2>
+            <p>Steps: <span id="steps">0</span></p>
+            <p>Calories Burned: <span id="calories">0</span></p>
+        </div>
+        <div class="controls">
+            <button id="addStep">Add Step</button>
+            <button id="burnCalories">Burn Calories</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
